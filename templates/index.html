@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Attendance System</title>
+</head>
+<body>
+<center>
+	<h1  style="margin-left:70vw;"><a href="/logout/">Logout</a></h1>
+	<h1>Hello {{name}}</h1>
+	<form method = "post" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit">Register</button>
+	</form>
+<br>
+		<button ><a href="markAtt/"> Mark Attendance </a></button>
+		<br>
+		<br>
+		<button ><a href="capturePhoto/"> Capture Image and Mark Attendance </a></button>
+	
+</center>
+
+
+</body>
+</html>
